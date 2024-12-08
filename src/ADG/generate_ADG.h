@@ -6,10 +6,15 @@
 #include "../types.h"
 #include "ADG_utilities.h"
 
-using namespace std;
+namespace ses {
 
-bool same_locations(Location location1, Location location2);
+    using namespace std;
 
-ADG construct_ADG(char* fileName);
+    bool same_locations(Location location1, Location location2);
 
-ADG construct_delayed_ADG(ADG &adg, int dlow, int dhigh, vector<int> &delayed_agents, vector<int> &states, int *input_sw_cnt, ofstream &outFile_setup);
+    ADG construct_ADG(char *fileName);
+
+    ADG construct_delayed_ADG(ADG &adg, int dlow, int dhigh, vector<int> &delayed_agents, vector<int> &states,
+                              int *input_sw_cnt, ofstream &outFile_setup);
+
+}

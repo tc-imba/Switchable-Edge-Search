@@ -2,6 +2,8 @@
 
 #include "Algorithm/Astar.h"
 
+using namespace ses;
+
 void print_for_replanning(ADG &adg, vector<int> states, ofstream &outFile_path) {
   outFile_path << "version 1\n";
   int agentCnt = get_agentCnt(adg);

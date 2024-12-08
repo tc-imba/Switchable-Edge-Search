@@ -7,24 +7,27 @@
 #include <set>
 #include <utility>
 
-using namespace std;
+namespace ses {
 
-// <arr[time]=vertex, arr[vertex]=time>
-typedef pair<vector<int>*, vector<int>*> sortResult;
+    using namespace std;
 
-// <outNeighbors, inNeighbors>
-typedef pair<set<int>*, set<int>*> subGraph;
+    // <arr[time]=vertex, arr[vertex]=time>
+    typedef pair<vector<int> *, vector<int> *> sortResult;
 
-// <type1 Graph, non-switchable Type2 Graph, switchable Type2 Graph, num nodes>
-typedef tuple<subGraph, subGraph, subGraph, int> Graph;
-typedef pair<int, int> Location;
-typedef vector<pair<Location, int>> Path;
-typedef vector<Path> Paths;
-typedef tuple<Graph, Paths, vector<int>> ADG;
-typedef tuple<ADG, int, vector<int>*> Node;
+    // <outNeighbors, inNeighbors>
+    typedef pair<set<int> *, set<int> *> subGraph;
 
-typedef tuple<ADG, int, int, vector<int>> slow_Node;
+    // <type1 Graph, non-switchable Type2 Graph, switchable Type2 Graph, num nodes>
+    typedef tuple<subGraph, subGraph, subGraph, int> Graph;
+    typedef pair<int, int> Location;
+    typedef vector<pair<Location, int>> Path;
+    typedef vector<Path> Paths;
+    typedef tuple<Graph, Paths, vector<int>> ADG;
+    typedef tuple<ADG, int, vector<int> *> Node;
 
+    typedef tuple<ADG, int, int, vector<int>> slow_Node;
+
+}
 
 #endif
 
