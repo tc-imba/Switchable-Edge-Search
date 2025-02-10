@@ -135,7 +135,7 @@ namespace ses {
         return timeSpent;
     }
 
-    int Simulator::step(bool switchCheck) {
+    int Simulator:: step(bool switchCheck) {
         int agentCnt = get_agentCnt(adg);
         vector<int> movable(agentCnt, 0);
         int timeSpent = checkMovable(movable);
